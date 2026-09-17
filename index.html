@@ -1,27 +1,94 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rinosoft - Atención a Clientes</title><style>
-:root{--blue:#164e63;--blue2:#0f766e;--bg:#f5f7fa;--text:#24313a;--card:#fff;--border:#d9e1e7}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-header{background:linear-gradient(135deg,var(--blue),var(--blue2));color:white;padding:34px 20px}
-header .wrap,main,footer{max-width:980px;margin:auto} header h1{margin:0 0 6px;font-size:30px} header p{margin:0;opacity:.92}
-nav{background:#fff;border-bottom:1px solid var(--border);padding:12px 20px} nav .wrap{max-width:980px;margin:auto;display:flex;gap:16px;flex-wrap:wrap}
-nav a{color:var(--blue);text-decoration:none;font-weight:600} nav a:hover{text-decoration:underline}
-main{padding:28px 20px} .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-h2{color:var(--blue);margin-top:0} h3{color:var(--blue2)} ul{padding-left:22px}.note{border-left:4px solid var(--blue2);padding:12px 16px;background:#eef7f7}
-.badge{display:inline-block;padding:4px 9px;border-radius:20px;background:#e6f2f4;color:var(--blue);font-size:13px;font-weight:bold}
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rinosoft - Base de conocimiento</title>
+<style>
+:root{--blue:#164e63;--green:#0f766e;--bg:#f5f7fa;--text:#24313a;--card:#fff;--border:#d9e1e7}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:linear-gradient(135deg,var(--blue),var(--green));color:#fff;padding:34px 20px}
+.wrap,main,footer{max-width:980px;margin:auto}header h1{margin:0 0 6px;font-size:30px}header p{margin:0;opacity:.92}
+nav{background:#fff;border-bottom:1px solid var(--border);padding:12px 20px}nav .wrap{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:var(--blue);text-decoration:none;font-weight:600}
+main{padding:28px 20px}.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+h2{color:var(--blue);margin-top:0}h3{color:var(--green);margin-top:24px}.badge{display:inline-block;padding:4px 9px;border-radius:20px;background:#e6f2f4;color:var(--blue);font-size:13px;font-weight:bold}
+.note{border-left:4px solid var(--green);padding:12px 16px;background:#eef7f7}.section{border-top:1px solid var(--border);margin-top:24px;padding-top:20px}
 footer{padding:25px 20px;color:#66757f;font-size:13px}
-</style></head><body>
-<header><div class="wrap"><h1>Rinosoft</h1><p>Base de conocimiento — Piloto de Atención a Clientes</p></div></header><nav><div class="wrap">
-<a href="index.html">Inicio</a>
-<a href="entregas.html">Tiempos de entrega</a>
-<a href="cambios.html">Cambios</a>
-<a href="devoluciones.html">Devoluciones</a>
-<a href="danados.html">Productos dañados</a>
-</div></nav>
-<main><div class="card"><span class="badge">PILOTO DE TRANSFORMACIÓN DIGITAL</span><h2>Información validada para Atención a Clientes</h2>
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>Rinosoft</h1>
+<p>Base de conocimiento — Piloto de Atención a Clientes</p>
+</div></header>
+<nav><div class="wrap"><a href="#entregas">Tiempos de entrega</a><a href="#cambios">Cambios</a><a href="#devoluciones">Devoluciones</a><a href="#danados">Productos dañados</a></div></nav>
+
+<main>
+<div class="card">
+<span class="badge">PILOTO DE TRANSFORMACIÓN DIGITAL</span>
+<h2>Información validada para Atención a Clientes</h2>
 <p>Este sitio contiene información ficticia preparada para demostrar un piloto de agente de IA para Rinosoft. El agente debe utilizar únicamente esta información como fuente de conocimiento y canalizar los casos que requieran validación humana.</p>
-<div class="note"><strong>Regla del piloto:</strong> la información sirve como orientación. No se deben inventar políticas, plazos, autorizaciones, reembolsos ni compromisos.</div></div>
-<div class="card"><h2>Temas disponibles</h2><ul>
-<li><a href="entregas.html">Tiempos de entrega</a></li><li><a href="cambios.html">Política de cambios</a></li>
-<li><a href="devoluciones.html">Política de devoluciones</a></li><li><a href="danados.html">Productos dañados</a></li></ul></div>
-<div class="card"><h2>Nota sobre los datos</h2><p>Todo el contenido de este sitio es ficticio y se utiliza exclusivamente para fines académicos y de demostración del piloto.</p></div></main>
-<footer>Rinosoft · Piloto académico · Información ficticia</footer></body></html>
+<div class="note"><strong>Regla del piloto:</strong> la información sirve como orientación. No se deben inventar políticas, plazos, autorizaciones, reembolsos ni compromisos.</div>
+</div>
+
+<div class="card" id="entregas">
+<h2>1. Tiempos de entrega</h2>
+<ul>
+<li>Los pedidos estándar tienen un tiempo estimado de <strong>3 a 5 días hábiles</strong>.</li>
+<li>El plazo comienza después de la confirmación del pedido.</li>
+<li>Si el pedido ya superó el plazo estimado, el cliente puede solicitar una revisión proporcionando el número de pedido.</li>
+<li>Atención a Clientes debe verificar el estado del pedido antes de proporcionar una fecha específica de entrega.</li>
+<li>El tiempo estimado puede variar según la modalidad de envío documentada.</li>
+<li>No se debe proporcionar una fecha u hora exacta si no está confirmada.</li>
+</ul>
+<div class="note"><strong>Validación humana:</strong> una fecha específica de entrega requiere revisar el estado real del pedido.</div>
+</div>
+
+<div class="card" id="cambios">
+<h2>2. Política de cambios</h2>
+<ul>
+<li>El cliente puede solicitar un cambio cuando recibió un producto diferente al solicitado.</li>
+<li>Se requiere el número de pedido, el producto recibido y el motivo de la solicitud.</li>
+<li>Atención a Clientes puede solicitar evidencia fotográfica.</li>
+<li>Atención a Clientes debe validar la solicitud antes de confirmar el cambio.</li>
+<li>Las excepciones y autorizaciones especiales requieren validación humana.</li>
+<li>El agente de IA <strong>no puede aprobar un cambio</strong>.</li>
+</ul>
+<div class="note"><strong>Validación humana:</strong> la aprobación definitiva corresponde al personal autorizado.</div>
+</div>
+
+<div class="card" id="devoluciones">
+<h2>3. Política de devoluciones</h2>
+<ul>
+<li>El cliente debe proporcionar el número de pedido y el motivo de la devolución.</li>
+<li>Atención a Clientes revisa las condiciones aplicables antes de confirmar la solicitud.</li>
+<li>Las excepciones requieren autorización del responsable correspondiente.</li>
+<li>No se deben prometer reembolsos ni compensaciones sin validación humana.</li>
+<li>El agente de IA no puede afirmar que una devolución o reembolso fue aprobado.</li>
+</ul>
+<div class="note"><strong>Validación humana:</strong> las excepciones y decisiones definitivas corresponden al personal autorizado.</div>
+</div>
+
+<div class="card" id="danados">
+<h2>4. Productos dañados</h2>
+<ul>
+<li>El cliente debe proporcionar el número de pedido y una descripción del problema.</li>
+<li>Puede solicitarse evidencia fotográfica del producto dañado.</li>
+<li>Atención a Clientes revisa la información recibida.</li>
+<li>Puede ser necesaria una revisión física del producto.</li>
+<li>El agente puede orientar sobre el procedimiento, pero no puede autorizar reemplazos, devoluciones, reembolsos o compensaciones.</li>
+<li>Si la información disponible es insuficiente, el caso debe canalizarse a un representante humano.</li>
+</ul>
+<div class="note"><strong>Validación humana:</strong> ninguna autorización definitiva debe inferirse únicamente de la información del agente.</div>
+</div>
+
+<div class="card">
+<h2>Control de la información</h2>
+<p>La información de esta página es ficticia y fue preparada exclusivamente para la demostración académica del piloto. En un escenario productivo, el contenido debería ser validado por los responsables de cada proceso y mantenerse en un repositorio corporativo con controles de acceso.</p>
+</div>
+</main>
+
+<footer>Rinosoft · Piloto académico · Información ficticia</footer>
+</body>
+</html>
